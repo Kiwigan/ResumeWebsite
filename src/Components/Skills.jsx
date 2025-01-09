@@ -11,7 +11,9 @@ import {
   DiGithubBadge,
   DiPhotoshop,
   DiUnitySmall,
-  DiMysql
+  DiMysql,
+  DiJava,
+  DiPhp
 } from "react-icons/di"
 import JMP from "../assets/JMP_Logo.png"
 import figma from "../assets/figma.png"
@@ -20,6 +22,7 @@ import tailwind from "../assets/tailwind.svg"
 import flutter from "../assets/flutter.png"
 import python from "../assets/python.png"
 import Reveal from "./Reveal"
+import syp from "../assets/syp.png"
 
 const skills = [
     {
@@ -38,8 +41,8 @@ const skills = [
       technologies: [
         { name: 'Node Js', icon: <DiNodejsSmall className='text-green-500' /> },
         { name: 'MongoDB', icon: <DiMongodb className='text-green-600' /> },
-        { name: 'React', icon: <DiReact className='text-blue-500' /> },
-        { name: 'GitHub', icon: <DiGithubBadge className='text-gray-600' /> },
+        { name: 'PHP', icon: <DiPhp className='text-indigo-300' /> },
+        { name: 'Java', icon: <DiJava className='text-blue-500' /> },
         { name: 'MySQL', icon: <DiMysql className='text-blue-400' /> }
       ],
     },
@@ -56,9 +59,9 @@ const skills = [
         category: 'Statistics',
         technologies: [ 
           { name: 'JMP', icon: <img src={JMP} alt="JMP Software Logo" className="w-6"/> },
-          { name: 'MongoDB', icon: <DiMongodb className='text-green-600' /> },
+          { name: 'Synopsis', icon: <img src={syp} alt="Tailwind Logo" className="w-4"/> },
           { name: 'Python', icon: <img src={python} alt="JMP Software Logo" className="w-4"/> },
-          { name: 'GitHub', icon: <DiGithubBadge className='text-gray-600' /> },
+          { name: 'Excel', icon: <DiGithubBadge className='text-gray-600' /> },
         ],
       }
   ]
