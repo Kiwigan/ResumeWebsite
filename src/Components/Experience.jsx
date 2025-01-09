@@ -13,7 +13,7 @@ const experiences = [
         link: "https://www.intel.sg/content/www/xa/en/homepage.html",
       },
       {
-        company: 'Singapore Examiniation Examiniation Board',
+        company: 'SEAB',
         role: 'Research Assistant',
         period: 'Mar 2021 - Jun 2021',
         description: 'Collaborated with Research Specialist in cleaning and structuring test data for analysis',
@@ -21,7 +21,7 @@ const experiences = [
         link: "https://www.seab.gov.sg/",
       },
       {
-        company: 'Central Provident Fund',
+        company: 'CPF',
         role: 'Administrative Assistant',
         period: 'Nov 2020 - Feb 2021',
         description: 'Consolidate CPF funds and analysed clients’ information with due diligence for cash transfers approval',
@@ -57,12 +57,13 @@ const Experience = () => {
                     <header class="basis-1/4 z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="2024 to Present">{experience.period}</header>
                     <div class="z-10 sm:col-span-6">
                     <h3 className="text-lg font-semibold leading-snug text-slate-200 flex flex-wrap items-center gap-1">
-                        <a href={experience.link} className="flex items-center flex-wrap">
-                            <span className="link link--arrowed">
-                                {experience.role} · {experience.company}
-                                <ArrowUpRight className="ml-1 mt-[0.13rem] w-[1.1rem] arrow-icon" />
-                        </span>
-                        </a>
+                    <a href={experience.link} className="flex items-center flex-wrap">
+                        <span className="link link--arrowed">
+                            {experience.role} · {experience.company}
+                            <ArrowUpRight className="ml-1 mt-[0.13rem] w-[1.1rem] h-[1.1rem] arrow-icon" />
+                    </span>
+                    </a>
+
                     </h3>
                     <p class="mt-2 text-sm leading-normal">{experience.description}</p>
 

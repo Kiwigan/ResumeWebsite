@@ -143,8 +143,6 @@ span {
 }
 
 .link--arrowed {
-  height: 2rem;
-  line-height: 2rem;
   @apply inline-flex items-center;
   .arrow-icon {
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
