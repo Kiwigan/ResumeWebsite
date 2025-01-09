@@ -10,7 +10,7 @@ import Button6 from './Components/Button6';
 
 const App = () => {
   return (
-    <div className='mx-6 md:mx-24'>
+    <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
       <Navbar/>
       <Hero/>
       <Skills/>

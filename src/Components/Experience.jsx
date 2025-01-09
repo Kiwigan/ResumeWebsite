@@ -53,31 +53,41 @@ const Experience = () => {
                     viewport={{ once: false, amount: 0.3}}
                     transition={{ duration: 1}}
                     >
-                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                    <header class="basis-1/4 z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="2024 to Present">{experience.period}</header>
-                    <div class="z-10 sm:col-span-6">
-                    <h3 class="text-lg font-semibold leading-snug text-slate-200 ">
-                    <a href={experience.link}>
-                        <span className="link link--arrowed">
-                            {experience.role} · {experience.company}
-                            <ArrowUpRight className="ml-1 mt-[0.13rem] w-[1.1rem] arrow-icon" />
-                    </span>
-                    </a>
-
-
-                    </h3>
-                    <p class="mt-2 text-sm leading-normal">{experience.description}</p>
-
-                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                        {experience.skills.map((skill, idx) => (
-                            <li key={idx} class="mr-2.5 mt-2 text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
+                    <div
+                        className="group relative grid pb-1 transition-all grid-cols-1 sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 items-start"
+                        >
+                        <header
+                            className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                            aria-label={experience.period}
+                        >
+                            {experience.period}
+                        </header>
+                        <div className="z-10 sm:col-span-6">
+                            <h3 className="text-lg font-semibold leading-snug text-slate-200">
+                            <a href={experience.link} className="inline-flex items-center gap-2">
+                                <span className="link link--arrowed">
+                                {experience.role} · {experience.company}
+                                </span>
+                                <ArrowUpRight className="w-[1.1rem] arrow-icon" />
+                            </a>
+                            </h3>
+                            <p className="mt-2 text-sm leading-normal">{experience.description}</p>
+                            <ul
+                            className="mt-2 flex flex-wrap"
+                            aria-label="Technologies used"
+                            >
+                            {experience.skills.map((skill, idx) => (
+                                <li
+                                key={idx}
+                                className="mr-2.5 mt-2 text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded"
+                                >
                                 {skill}
-                            </li>
-                        ))}
-                    
-                    </ul>
-                    </div>
-                    </div>
+                                </li>
+                            ))}
+                            </ul>
+                        </div>
+                        </div>
+
                     
 
 
