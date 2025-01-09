@@ -132,7 +132,7 @@ span {
 }
 
 .active2{
-  @apply bg-gray-700 text-gray-900;
+  @apply bg-gray-700 text-gray-400 rounded py-2 px-6 justify-center align-middle;
 }
 
 

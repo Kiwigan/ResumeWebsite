@@ -1,7 +1,9 @@
 import React from 'react';
-import project1 from "../assets/KrissGraph.jpeg"
-import project2 from "../assets/project2.png"
-import project3 from "../assets/project3.png"
+import project1 from "../assets/Rovival.png"
+import project2 from "../assets/AtelierNoire.png"
+import project3 from "../assets/KrissGraph.jpeg"
+import project4 from "../assets/NTULearn.png"
+import project5 from "../assets/noimage.png"
 import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai'
 import Reveal from './Reveal';
 import { motion } from 'framer-motion';
@@ -34,22 +36,22 @@ const projects = [
       description: "An fashion e-commerce platform with various features.",
       skills: ["Javascript", "JQuery", "Tomcat", "MySQL"],
       links: {
-        site: "http://localhost:5173/",
-        github: "http://localhost:5173/",
+        site: "https://kiwigan.github.io/Webpage-Eshop/EzFashion/home.html",
+        github: "https://github.com/Kiwigan/Webpage-Eshop",
       },
     },
     {
-      img: project3,
+      img: project4,
       title: "NTULearn",
       description: "A redesign of my university course website.",
       skills: ["Figma"],
       links: {
-        site: "https://www.figma.com/proto/fDY2ISK9yuRFv29tpfFyUC/Keegan-Design-Portfolio?page-id=0%3A1&node-id=214-713&node-type=frame&viewport=657%2C350%2C0.3&t=lEaKvzoi8A3QZca4-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=214%3A713",
-        github: "#",
+        github: "https://www.figma.com/proto/fDY2ISK9yuRFv29tpfFyUC/Keegan-Design-Portfolio?page-id=0%3A1&node-id=214-713&node-type=frame&viewport=657%2C350%2C0.3&t=lEaKvzoi8A3QZca4-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=214%3A713",
+        site: "https://www.figma.com/proto/kIdDxNys3V1JzHm5ggt9nV/spacejam---NTULearn?page-id=0%3A1&node-id=137-3132&node-type=frame&viewport=6942%2C-8589%2C0.26&t=XRElOplvByZtqm8j-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=137%3A3067&show-proto-sidebar=1",
       },
     },
     {
-      img: project3,
+      img: project5,
       title: "Quizet",
       description: "Reimagining Kahoot on mobile.",
       skills: ["Android Studio", "JQuery", "Tomcat", "MySQL"],
@@ -59,13 +61,13 @@ const projects = [
       },
     },
     {
-      img: project3,
+      img: project5,
       title: "NTU Marketplace",
-      description: "A phone app that serves as a platform for student-run businesses sell their items.",
+      description: "A mobile app platform for student-run businesses sell their inventory.",
       skills: ["Flutter", "Android Studio", "Flask", "JIRA"],
       links: {
         site: "#",
-        github: "#",
+        github: "https://github.com/garrysjh/NTUMart",
       },
     },
     
